@@ -10,11 +10,11 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 
-public class CartelleHandler implements HttpHandler {
+public class TAS_cartelleHandler implements HttpHandler {
     private final TombolaRepository repo;
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    public CartelleHandler(TombolaRepository repo) {
+    public TAS_cartelleHandler(TombolaRepository repo) {
         this.repo = repo;
     }
 

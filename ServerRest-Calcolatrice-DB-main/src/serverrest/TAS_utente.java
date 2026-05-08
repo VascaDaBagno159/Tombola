@@ -1,6 +1,6 @@
 package TAS.models;
 
-public class Utente {
+public class Tas_utente {
     private int id;
     private String username;
     private String passwordHash;

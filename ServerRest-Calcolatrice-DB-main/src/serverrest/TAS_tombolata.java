@@ -1,6 +1,6 @@
 package TAS.models;
 
-public class Tombolata {
+public class TAS_tombolata {
     private int id;
     private String nome;
     private String timestamp;

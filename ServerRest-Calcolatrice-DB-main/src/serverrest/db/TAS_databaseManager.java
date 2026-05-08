@@ -5,21 +5,21 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DatabaseManager {
+public class TAS_databaseManager {
 
     private static DatabaseManager instance;
     private Connection connection;
 
     private static final String SQLITE_URL = "jdbc:sqlite:taas.db";
 
-    private DatabaseManager() throws SQLException {
+    private TAS_databaseManager() throws SQLException {
         connection = DriverManager.getConnection(SQLITE_URL);
         initSchema();
     }
 
-    public static synchronized DatabaseManager getInstance() throws SQLException {
+    public static synchronized TAS_databaseManager getInstance() throws SQLException {
         if (instance == null || instance.connection.isClosed()) {
-            instance = new DatabaseManager();
+            instance = new TAS_databaseManager();
         }
         return instance;
     }

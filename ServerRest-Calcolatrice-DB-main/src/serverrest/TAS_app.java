@@ -1,6 +1,6 @@
 package TAS;
 
-public class App {
+public class TAS_app {
     public static void main(String[] args) {
         int porta = 8080;
         if (args.length > 0) {

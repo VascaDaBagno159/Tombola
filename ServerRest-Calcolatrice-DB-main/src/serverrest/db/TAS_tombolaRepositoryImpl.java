@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class TombolaRepositoryImpl implements TombolaRepository {
+public class TAS_tombolaRepositoryImpl implements TAS_tombolaRepository {
 
-    private final DatabaseManager db;
+    private final TAS_databaseManager db;
 
-    public TombolaRepositoryImpl(DatabaseManager db) {
+    public TAS_tombolaRepositoryImpl(TAS_databaseManager db) {
         this.db = db;
     }
 

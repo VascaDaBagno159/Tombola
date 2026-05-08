@@ -1,6 +1,6 @@
 package TAS.models;
 
-public class Estrazione {
+public class TAS_estrazione {
     private int id;
     private int numero;
     private String timestamp;

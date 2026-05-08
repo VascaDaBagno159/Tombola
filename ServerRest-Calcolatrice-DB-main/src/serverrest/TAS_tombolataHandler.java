@@ -12,12 +12,12 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
-public class TombolateHandler implements HttpHandler {
+public class TAS_tombolataHandler implements HttpHandler {
 
     private final TombolaRepository repo;
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    public TombolateHandler(TombolaRepository repo) {
+    public TAS_tombolataHandler(TombolaRepository repo) {
         this.repo = repo;
     }
 

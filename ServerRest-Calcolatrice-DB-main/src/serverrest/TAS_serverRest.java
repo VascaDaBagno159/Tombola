@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.sql.SQLException;
 
-public class ServerRest {
+public class TAS_serverRest {
 
     public static void avviaServer(int porta) {
         try {
@@ -18,12 +18,11 @@ public class ServerRest {
 
             HttpServer server = HttpServer.create(new InetSocketAddress(porta), 0);
 
-            server.createContext("/api/tombolate", new TombolateHandler(repo));
-            server.createContext("/api/utenti", new UtentiHandler(repo));
-            server.createContext("/api/cartelle", new CartelleHandler(repo));
-            server.createContext("/api/estrazioni", new EstrazioniHandler(repo));
-            server.createContext("/api/vincite", new VinciteHandler(repo));
-
+            server.createContext("/api/tombolate", new TAS_tombolateHandler(repo));
+            server.createContext("/api/utenti", new TAS_utentiHandler(repo));
+            server.createContext("/api/cartelle", new TAS_cartelleHandler(repo));
+            server.createContext("/api/estrazioni", new TAS_estrazioneHandler(repo));
+            server.createContext("/api/vincite", new TAS_vinciteHandler(repo));
             server.setExecutor(null);
             server.start();
 

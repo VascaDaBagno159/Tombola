@@ -1,6 +1,6 @@
 package TAS.models;
 
-public class Cartella {
+public class TAS_cartella {
     private int id;
     private int colonne = 9;
     private int righe = 3;

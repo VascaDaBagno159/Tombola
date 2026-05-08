@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
-public interface TombolaRepository {
+public interface TAS_tombolaRepository {
 
     Tombolata creaTombolata(Tombolata t) throws SQLException;
     List<Tombolata> listaTombolate() throws SQLException;

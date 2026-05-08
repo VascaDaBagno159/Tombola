@@ -11,12 +11,12 @@ import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 import java.util.List;
 
-public class VinciteHandler implements HttpHandler {
+public class TAS_vinciteHandler implements HttpHandler {
 
     private final TombolaRepository repo;
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-    public VinciteHandler(TombolaRepository repo) {
+    public TAS_vinciteHandler(TombolaRepository repo) {
         this.repo = repo;
     }
 

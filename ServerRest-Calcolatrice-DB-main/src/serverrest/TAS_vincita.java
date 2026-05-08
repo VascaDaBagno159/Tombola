@@ -1,6 +1,6 @@
 package TAS.models;
 
-public class Vincita {
+public class TAS_vincita {
     private int id;
     private int numeroVincitori;
     private String timestamp;
